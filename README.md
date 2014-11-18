@@ -77,7 +77,14 @@ var MyStore = require("../stores/MyStore")
 React.createClass({
   mixins : [
     MyStore.createReactMixin()
-  ]
+  ],
+  render() {
+    return (
+      <div>
+        {this.state.foo}
+      </div>
+    )
+  }
 })
 ```
 
