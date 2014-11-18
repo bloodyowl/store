@@ -6,7 +6,15 @@
 
 ## install
 
+```sh
+$ npm install bloody-store
+```
+
 ## require
+
+```javascript
+var Store = require("bloody-store")
+```
 
 ## api
 
