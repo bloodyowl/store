@@ -4,7 +4,7 @@ var assign = require("object-assign")
 
 /**
  * base class for Stores, implementing the EventEmitter logic,
- * Store instances must be have a `getStore` method
+ * Store instances must own a `getStore` method
  *
  * @param options {Object} Store methods and properties
  * @returns store {Object}

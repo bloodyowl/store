@@ -20,7 +20,7 @@ var Store = require("bloody-store")
 
 ### var store = new Store(spec)
 
-base class for Stores, implementing the EventEmitter logic, Store instances must be have a `getStore` method
+base class for Stores, implementing the EventEmitter logic, Store instances must own a `getStore` method
 
 ### store.addChangeListener(func)
 

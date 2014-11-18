@@ -1,6 +1,6 @@
 {
   "name": "bloody-store",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a simple store that works well with Flux",
   "main": "lib/Store.js",
   "scripts": {
