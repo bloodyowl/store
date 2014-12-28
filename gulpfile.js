@@ -3,6 +3,7 @@ var browserify = require("browserify")
 var del = require("del")
 var source = require("vinyl-source-stream")
 var reactify = require("reactify")
+var derequire = require("gulp-derequire")
 
 var browserifyOptions = {
   entries: ["./src/index.js"],
@@ -18,6 +19,7 @@ gulp.task("lib", ["clean"], function(){
     .transform(reactify, {es6:true})
     .bundle()
     .pipe(source("Store.js"))
+    .pipe(derequire())
     .pipe(gulp.dest("lib/"))
 })
 
